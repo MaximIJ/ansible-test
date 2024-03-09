@@ -1,0 +1,9 @@
+---
+- hosts: localhost # The host to run the playbook on
+  connection: local # The connection type
+  become: true # Enables sudo privileges
+  tasks:
+    - name: Install fzf
+      package:
+        name: fzf
+
